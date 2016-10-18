@@ -1,0 +1,36 @@
+<!DOCTYPE html> 
+<html lang="ko"> 
+<head> 
+	<meta charset="utf-8" /> 
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"> 
+	<meta name="format-detection" content="telephone=no">
+	<title>CLiP</title>
+	<link rel="stylesheet" type="text/css" href="../css/common.css" />
+	<script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript">
+		$(function(){			
+			$(window).on('resize', function(){
+				var winH = $(this).height();
+				$('.serviceDelay').css({
+					height : winH
+				});
+			}).resize();
+		});
+	</script>
+</head> 
+<body>
+<!-- 일시적 서비스 지연 : s -->
+
+<!-- serviceDelay : s -->
+<div class="serviceDelay">
+	<!-- inner : s -->
+	<div class="inner">
+		<p class="message">네트워크가 차단되었습니다.<br>네트워크 차단을 해제한 후 이용해주세요.</p>
+	</div>
+	<!-- inner : e -->
+</div>
+<!-- serviceDelay : e -->
+
+<!-- 일시적 서비스 지연 : e -->
+</body>
+</html>
